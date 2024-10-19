@@ -11,3 +11,10 @@ sudo pip3.8 install ansible
 sudo pip3.8 install boto3 botocore awscli
 #change terminal color
 echo "PS1='\e[1;32m\u@\h \w$ \e[m'" >> /home/ec2-user/.bash_profile
+
+sudo yum install get -y
+mkdir /home/ec2-user/ansible-lab
+git clone https://github.com/Atem1972/ansible-playbook.git
+mv ansible-playbook/* /home/ec2-user/ansible-dev/
+rm -rf ansible-playbook
+sudo chown -r ec2-user:ec2-user /home/ec2-user/ansible-dev
