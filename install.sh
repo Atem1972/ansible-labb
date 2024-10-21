@@ -17,4 +17,5 @@ mkdir /home/ec2-user/ansible-lab
 git clone https://github.com/Atem1972/ansible-playbook.git
 mv ansible-playbook/* /home/ec2-user/ansible-dev/
 rm -rf ansible-playbook
-sudo chown -r ec2-user:ec2-user /home/ec2-user/ansible-dev
+sudo chown -R ec2-user:ec2-user /home/ec2-user/ansible-dev
+sudo chmod -R 755 /home/ec2-user/ansible-dev
